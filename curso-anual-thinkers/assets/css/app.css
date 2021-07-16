@@ -1,0 +1,651 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,700&display=swap);
+
+:root {
+  --bloque1: #f7a930;
+  --bloque2: #f7c230;
+  --bloque3: #0074ff;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --trazo1: #f78830;
+  --trazo2: #ffd200;
+  --trazo3: #ffd400;
+  --naranja: #ff6700;
+  --color1: #333333;
+  --color3: #ffb000;
+  --relleno1: #000000;
+  --relleno2: #f9c430;
+  --footer: #0074ff;
+
+  --trazo2: #00b7ff;
+  --boton1: #f20f45;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.logo {
+  margin: 20px;
+  display: flex;
+}
+
+.logo__img {
+  width: 10%;
+}
+
+.hero {
+  height: 50vh;
+  background: url(../img/head.webp);
+  background-size: cover;
+}
+
+.hero__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text {
+  color: var(--blanco);
+  font-size: 6em;
+  font-style: italic;
+  font-weight: 600;
+}
+.conferencias {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conferencias__contenedor {
+  margin: 50px;
+}
+.conferencias__texto {
+  font-size: 2em;
+  font-style: italic;
+}
+.conferencia__video {
+  width: 80%;
+  margin: 0 auto;
+}
+.conferencia__video__item {
+  background: var(--bloque1);
+  height: 450px;
+  width: 100%;
+  margin-top: 10px;
+}
+.conferencia__video__texto {
+  margin: 5%;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-style: italic;
+}
+.dudas {
+  width: 100%;
+}
+.dudas__contenedor {
+  position: relative;
+  background: var(--bloque2);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.dudas__contenido {
+  background: var(--bloque2);
+  width: 100%;
+  height: 80%;
+  top: 12%;
+}
+.dudas__texto__titulo {
+  padding-top: 2%;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+.dudas__texto__subtitulo {
+  text-align: center;
+  margin: 0;
+}
+
+.dudas__panel {
+  margin: 80px 0;
+}
+
+.dudas__panel__contenido {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.accordion-body {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.accordion-button::after {
+  background-image: url(../img/flecha1.svg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/flecha1.svg);
+  transform: rotate(-180deg);
+}
+.accordion-item {
+  background-color: #fff;
+  border: none;
+  padding-top: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--blanco);
+  background-color: var(--bloque2);
+}
+
+.accordion-item .accordion-button {
+  background-color: var(--bloque2);
+}
+
+.dudas__entrevista {
+  padding-top: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dudas__entrevista__texto {
+  font-size: 20px;
+  font-weight: 900;
+  width: 250px;
+  font-style: italic;
+  margin-right: 25px;
+}
+
+.boton {
+  background: #000;
+  padding: 15px;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.boton__especial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover {
+  color: white;
+}
+
+.boton__negro {
+  border: 3px solid var(--color3);
+}
+
+.boton__amarillo {
+  border: 3px solid var(--bloque2);
+  font-size: 1em;
+  font-style: italic;
+}
+.boton__naranja {
+  font-size: 2em;
+  font-weight: 600;
+  font-style: italic;
+  border: 3px solid var(--trazo1);
+  width: 10%;
+}
+.boton__azul {
+  width: 20%;
+  border: 3px solid var(--trazo2);
+}
+.dudas__icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20%;
+}
+
+.curso__fondo {
+  margin-bottom: 40px;
+  height: 52vh;
+  background: url(../img/portada.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.curso__contenido__texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.curso__titulo {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 5px solid var(--naranja);
+}
+.curso__contenido {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+.video__content {
+  width: 40%;
+  height: 350px;
+  background: var(--naranja);
+}
+
+.curso__texto {
+  width: 40%;
+  margin-left: 60px;
+}
+
+.curso__texto__titulo {
+  font-size: 2em;
+  font-weight: 900;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.curso__texto__contenido {
+  font-size: 1.5em;
+}
+
+.diferencias {
+  background: url(../img/portada2.webp);
+  background-position: center;
+  height: 450px;
+  margin: 80px 0;
+  color: var(--blanco);
+}
+
+.diferencias__titulo {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  font-style: italic;
+  width: 72%;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 6px solid var(--naranja);
+  margin-bottom: 5%;
+}
+
+.diferencia__contenedor__item {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diferencias__imagenes__contenedor {
+  margin-left: 20%;
+}
+
+.diferencias__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.diferencias__imagenes {
+  width: 30%;
+  margin-right: 20px;
+}
+.diferencias__texto {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.diferencia__texto__claro {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.promociones {
+  width: 100%;
+}
+
+.promociones__contenedor__imagen {
+  position: relative;
+  z-index: 500;
+}
+
+.cuadro__amarillo {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #ffd200;
+  left: 50px;
+}
+
+.promociones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 0;
+}
+
+.promociones__imagen__portada {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 50px;
+}
+.rectangulo__naranja {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 5px solid var(--naranja);
+  top: 90px;
+  left: 90px;
+}
+
+.promociones__contenedor__texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.promociones__texto {
+  font-style: italic;
+  width: 80%;
+}
+
+.promociones__titulo {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.naranja__texto {
+  color: var(--naranja);
+  font-weight: 600;
+}
+
+.promociones__cupones {
+  margin-top: 50px;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 15px 0;
+  border-bottom: 5px solid var(--trazo1);
+}
+
+.promo__cupones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cupon__img {
+  width: 50%;
+}
+
+.contenedor__boton {
+  margin-top: 50px;
+}
+
+.inscribete__ban {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  background: var(--footer);
+}
+
+.inscribete__titulo {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.footer__redes {
+  background: var(--relleno2);
+  padding: 40px;
+}
+
+.footer__redes__contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__ico {
+  margin-left: 15px;
+  width: 45px;
+}
+
+.footer__contacto {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer__priv {
+  color: #fff;
+}
+
+.footer__priv:hover {
+  color: var(--relleno3);
+}
+@media (max-width: 991px) {
+  body {
+    width: 100%;
+  }
+  .responsive {
+    display: none;
+  }
+  .hero__cta {
+    font-size: 20px;
+    width: auto;
+    top: 50%;
+    left: 154px;
+    padding: 5px;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .logo__img {
+    width: 40%;
+  }
+  .hero {
+    height: 30vh;
+    background: url(../img/header_responsive.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+  }
+  .hero__text {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 900;
+  }
+  .hero__content {
+    position: absolute;
+    top: 0;
+    left: 4%;
+  }
+  .conferencias {
+    width: 100%;
+  }
+
+  .conferencias__contenedor {
+    margin: 20px;
+  }
+
+  .conferencias__texto {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .conferencia__video__item {
+    height: 250px;
+  }
+  .conferencia__video__texto {
+    font-size: 1em;
+  }
+
+  .dudas__contenido {
+    top: 8%;
+  }
+
+  .dudas__texto__titulo {
+    font-size: 1.2em;
+    font-weight: 900;
+    padding-top: 10%;
+  }
+  .dudas__texto__subtitulo {
+    font-size: 1em;
+  }
+
+  .dudas__panel__contenido {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .accordion-button {
+    font-size: 0.7rem;
+  }
+  .accordion-body {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .dudas__entrevista__texto {
+    font-size: 0.7em;
+    font-weight: 900;
+    width: 150px;
+    font-style: italic;
+    margin: 0;
+  }
+  .boton__especial {
+    width: 50%;
+    font-size: 1em;
+  }
+
+  .curso__fondo {
+    background: url(../img/portada_movil.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+  .curso__contenido {
+    width: 100%;
+    flex-direction: column;
+  }
+  .curso__texto__titulo {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    margin: 60px 0;
+  }
+  .video__content {
+    width: 100%;
+    height: 175px;
+  }
+  .curso__texto {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .boton__amarillo {
+    font-size: 1em;
+    margin: 30px;
+  }
+  .diferencias {
+    background: #fff;
+    color: #000;
+  }
+  .diferencias__titulo {
+    width: 100%;
+    font-size: 1.4em;
+    padding: 0;
+  }
+
+  .diferencias__texto {
+    font-size: 1em;
+  }
+  .diferencia__contenedor__item {
+    flex-direction: column;
+  }
+  .diferencias__imagenes__contenedor {
+    margin-left: 0%;
+  }
+  .diferencias__item {
+    margin: 0;
+    padding: 25px;
+  }
+
+  .promociones {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .promociones__contenedor__imagen {
+    visibility: initial;
+  }
+  .cuadro__amarillo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .rectangulo__naranja {
+    width: 100px;
+    height: 100px;
+  }
+
+  .promociones__imagen__portada {
+    width: 100%;
+    height: 450px;
+    
+    position: static;
+  }
+  .promociones__texto {
+    width: 100%;
+  }
+  .promociones__titulo {
+    font-size: 1.2em;
+  }
+  .promociones__cupones {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+  }
+
+  .promo__cupones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cupon__img {
+    width: 95%;
+  }
+}

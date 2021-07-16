@@ -1,0 +1,676 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,700&display=swap);
+:root {
+  --color1: #333333;
+  --color3: #ffb000;
+  --relleno1: #000000;
+  --relleno2: #f9c430;
+  --relleno3: #0074ff;
+  --trazo1: #ffd400;
+  --trazo2: #00b7ff;
+  --boton1: #f20f45;
+  --naranja: #f78830;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.logo {
+  margin: 20px;
+  display: flex;
+}
+
+.logo__img {
+  width: 10%;
+}
+
+.hero {
+  height: 100vh;
+  background: url(../img/head.webp);
+  background-size: cover;
+  position: relative;
+}
+
+.hero__content {
+  position: absolute;
+  top: 10%;
+  left: 87px;
+}
+
+.hero__text {
+  font-size: 5em;
+  font-weight: 900;
+  text-shadow: rgb(0 0 0) 1px 1px 3px;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 70px;
+  text-transform: uppercase;
+  background: 0 0;
+  color: #fff;
+}
+
+.hero__cta {
+  text-transform: uppercase;
+  position: absolute;
+  display: inline-block;
+  font-size: 25px;
+  background: var(--boton1);
+  border-radius: 50px;
+  padding: 10px;
+  color: #fff;
+  width: 330px;
+  font-weight: 700;
+  text-align: center;
+  top: 90%;
+}
+
+.cursos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cursos__subtitle {
+  margin-top: 50px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 5px solid var(--trazo1);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cursos__content {
+  display: flex;
+  justify-content: center;
+}
+
+.cursos__item {
+  margin: 50px;
+  display: flex;
+}
+
+.cursos__img {
+  width: 30%;
+}
+
+.cursos__text {
+  margin-left: 20px;
+  font-weight: 900;
+}
+
+.curso_text__brig {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.inscribete {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.inscribete__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 340px;
+  margin-bottom: 80px;
+}
+
+.inscribete__video {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  margin-top: 35px;
+  z-index: 1;
+}
+
+.cuadro__video {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: orange;
+  left: 10%;
+  z-index: 100;
+  box-shadow: 3px 3px 10px #000;
+}
+
+.cuadro_borde {
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 4px solid var(--relleno2);
+  top: -35px;
+  z-index: 30;
+}
+
+.cuadro__relleno {
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  background: var(--relleno2);
+  bottom: -35px;
+  right: 0;
+  z-index: 30;
+}
+
+.inscribete__texto {
+  padding: 10px;
+  margin-left: 50px;
+  width: 50%;
+}
+
+.inscribete__texto__titulo {
+  font-weight: 700;
+  font-size: 30px;
+  width: 80%;
+  font-style: italic;
+}
+
+.inscribete__texto__pharaph {
+  font-size: 20px;
+  width: 88%;
+}
+
+.banner {
+  height: 50vh;
+  background: url(../img/banner.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.banner__content {
+  position: absolute;
+  top: 31%;
+  left: 15%;
+}
+
+.banner__titulo {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: rgb(0 0 0) 1px 1px 3px;
+}
+
+.banner__subtitulo {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cupones {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.cuponer__contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cupones__img {
+  width: 40%;
+}
+
+.dudas {
+  width: 100%;
+}
+.dudas__contenedor {
+  position: relative;
+  background: var(--bloque2);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.dudas__contenido {
+  background: var(--bloque2);
+  width: 100%;
+  height: 80%;
+  top: 12%;
+}
+.dudas__texto__titulo {
+  padding-top: 2%;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+.dudas__texto__subtitulo {
+  text-align: center;
+  margin: 0;
+}
+
+.dudas__panel {
+  margin: 0px 0;
+}
+
+.dudas__panel__contenido {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.accordion-body {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+.accordion-button::after {
+  background-image: url(../img/flecha1.svg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/flecha1.svg);
+  transform: rotate(-180deg);
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: var(--blanco);
+  background-color: var(--naranja);
+}
+
+.accordion-item .accordion-button {
+  background-color: var(--naranja);
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: none;
+    padding-top: 20px;
+    
+  }
+
+
+.dudas__entrevista {
+  padding-top: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dudas__entrevista__texto {
+  font-size: 20px;
+  font-weight: 900;
+  width: 250px;
+  font-style: italic;
+  margin-right: 25px;
+}
+
+.cupones__boton {
+  width: 100%;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  background: #000;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.boton__negro {
+  border: 3px solid var(--color3);
+}
+
+.boton__azul {
+  border: 3px solid var(--trazo2);
+}
+
+.boton__especial {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+}
+
+.dudas__icons {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 20%;
+}
+
+.galeria {
+  width: 100%;
+}
+
+.galeria__contenido__texto {
+  width: 40%;
+  border-bottom: 5px solid var(--color3);
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.galeria__titulo {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+}
+
+.galeria__subtitulo {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.galeria__fotos {
+  height: 90vh;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+.galeria__fotos__cuadro {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  height: 45%;
+  background: var(--relleno2);
+  z-index: 10;
+}
+
+.galeria__fotos__contenedor {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  z-index: 200;
+  margin-left: 10%;
+  top: 20%;
+  gap: 10px;
+}
+
+.galeria__fotos__item {
+  position: absolute;
+  width: 200px;
+  box-shadow: 1px 2px 10px #000;
+}
+
+.foto1 {
+  top: 0;
+}
+
+.foto2 {
+  left: 215px;
+  top: -35px;
+}
+
+.foto3 {
+  width: 170px;
+  left: 430px;
+  top: 30px;
+}
+
+.foto4 {
+  left: 615px;
+  top: 0;
+}
+
+.foto5 {
+  width: 240px;
+  left: 830px;
+  top: -38px;
+}
+
+.foto6 {
+  width: 240px;
+  right: 882px;
+  top: 214px;
+}
+
+.foto7 {
+  right: 665px;
+  top: 182px;
+}
+
+.foto8 {
+  width: 250px;
+  right: 398px;
+  top: 221px;
+}
+
+.foto9 {
+  width: 170px;
+  right: 210px;
+  top: 221px;
+}
+
+.foto10 {
+  width: 250px;
+  right: -55px;
+  top: 221px;
+}
+
+.inscribete__ban {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  background: var(--relleno3);
+}
+
+.inscribete__titulo {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.footer__redes {
+  background: var(--relleno2);
+  padding: 40px;
+}
+
+.footer__redes__contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__ico {
+  margin-left: 15px;
+  width: 45px;
+}
+
+.footer__contacto {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer__priv {
+  color: #fff;
+}
+
+.footer__priv:hover {
+  color: var(--relleno3);
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 100%;
+  }
+  .responsive {
+    display: none;
+  }
+  .hero__cta {
+    font-size: 20px;
+    width: auto;
+    top: 50%;
+    left: 154px;
+    padding: 5px;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .logo__img {
+    width: 40%;
+  }
+  .hero {
+    height: 100vh;
+    background: url(../img/headres.webp);
+    background-size: cover;
+    position: relative;
+    background-position-x: -130px;
+  }
+  .hero__content {
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  .hero__text {
+    font-size: 2.2em;
+    line-height: normal;
+  }
+  .cursos__content {
+    flex-direction: column;
+  }
+  .cursos {
+    width: 90%;
+  }
+  .cursos__subtitle {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .cursos__item {
+    margin: 20px;
+  }
+  .inscribete__content {
+    width: 100%;
+    flex-direction: column;
+    height: 500px;
+  }
+  .cuadro_borde {
+    display: none;
+  }
+  .cuadro__relleno {
+    display: none;
+  }
+  .inscribete {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .inscribete__texto {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .inscribete__texto__titulo {
+    width: auto;
+    font-style: italic;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .cuadro__video {
+    margin: 50px;
+    width: 80%;
+    height: 220px;
+    position: static;
+  }
+  .inscribete__video {
+    width: 100%;
+  }
+  .banner {
+    height: 25vh;
+    background: url(../img/banneres.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .banner__content {
+    left: 5%;
+  }
+  .banner__titulo {
+    font-size: 24px;
+  }
+  .banner__subtitulo {
+    font-size: 15px;
+  }
+  .cuponer__contenedor {
+    flex-direction: column;
+  }
+  .cupones__img {
+    width: 90%;
+    justify-content: center;
+  }
+  .galeria {
+    margin-bottom: 400px;
+  }
+  .galeria__contenido__texto {
+    width: auto;
+  }
+  .galeria__titulo {
+    font-size: 22px;
+  }
+  .galeria__subtitulo {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .galeria__fotos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria__fotos__item {
+    position: static;
+  }
+  .foto1,
+  .foto10,
+  .foto2,
+  .foto3,
+  .foto4,
+  .foto5,
+  .foto6,
+  .foto7,
+  .foto8,
+  .foto9 {
+    width: 150px;
+    height: 150px;
+  }
+  .galeria__fotos__cuadro {
+    height: 115%;
+  }
+  .inscribete__ban {
+    padding: 10px;
+  }
+
+  .dudas__contenido {
+    top: 8%;
+  }
+
+  .dudas__texto__titulo {
+    font-size: 1.2em;
+    font-weight: 900;
+    padding-top: 10%;
+  }
+  .dudas__texto__subtitulo {
+    font-size: 1em;
+  }
+
+  .dudas__panel__contenido {
+    width: 90%;
+    margin: 0 auto;
+}
+}
